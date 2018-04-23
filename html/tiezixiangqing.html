@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>橘猫游戏论坛</title>
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/main.css"/>
+    <link rel="stylesheet" href="../style/animate.css"/>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/js.js"></script>
+</head>
+<body>
+<!--登录&注册框-->
+<div id="LoginZhuceBox">
+    <!--登录&注册框头部-->
+    <div class="LoginZhuceBox_header clearfix">
+        <div id="login_btn" class="login fl"><a href="#">登录</a></div>
+        <div id="register_btn" class="register fr "><a href="#">免费注册</a></div>
+        <i id="close"><img src="../images/login/close.png" alt=""/></i>
+    </div>
+    <!--登录&注册框头部结束-->
+    <!--登录&注册框内容-->
+    <!--登录框内容-->
+    <div id="login_content" class="LoginZhucecontent login_content">
+        <form>
+            <div>
+                <input type="text" name="username" size="25" maxlength="14" placeholder="手机号/用户名/邮箱"/>
+                <a href="#"><img src="../images/login/me.png" alt=""/></a>
+                <p id="username_tishi">用户名不存在</p>
+            </div>
+            <div>
+                <input type="text" name="username" size="25" maxlength="14" placeholder="请输入你的密码"/>
+                <a href="#"><img src="../images/login/password.png" alt=""/></a>
+                <p id="password_tishi">密码错误</p>
+            </div>
+            <div id="checkbox2">
+                <label for="cc2">
+                    <input type="checkbox" id="cc2"/>
+                    <span></span>
+                </label>
+                <p>下次自动登录</p> <a href="#">忘记密码?</a>
+
+            </div>
+            <div>
+                <input type="submit" value="立即登录      " name="submit" id="lijidenglu"/>
+            </div>
+            <div id="other_login">
+                <span>其他账号登录：</span>
+                <a href="#"><img src="../images/login/weibo.png" alt=""/></a>
+                <a href="#"><img src="../images/login/weixin.png" alt=""/></a>
+                <a href="#"><img src="../images/login/qq.png" alt=""/></a>
+            </div>
+
+
+
+        </form>
+    </div>
+    <!--注册框内容-->
+    <div id="register_content" class="LoginZhucecontent">
+        <form>
+            <div>
+                <input type="text" name="username" size="25" maxlength="14" />
+                <a href="#"><img src="../images/login/me.png" alt=""/></a>
+                <p>2-14个字符：英文、数字或中文</p>
+            </div>
+            <div>
+                <input type="text" name="username" size="25" maxlength="14" />
+                <a href="#"><img src="../images/login/password.png" alt=""/></a>
+                <p>6-20个字符(区分大小写)</p>
+            </div>
+            <div>
+                <input type="text" name="username" size="25" maxlength="14"/>
+                <a href="#"><img src="../images/login/password.png" alt=""/></a>
+                <p>请再次输入密码</p>
+            </div>
+            <div>
+                <input type="submit" value="马上注册      " name="submit" id="mashangzhuce"/>
+            </div>
+            <div id="checkbox">
+                <label for="cc">
+                    <input type="checkbox" id="cc"/>
+                    <span></span>
+                </label>
+                <p>我已经阅读并同意</p> <a href="#">《橘猫用户服务条款》</a>
+
+            </div>
+
+
+
+        </form>
+    </div>
+    <!--登录&注册框内容结束-->
+</div>
+<!--登录&注册框结束-->
+
+<!--顶部导航开始-->
+<div class="box">
+    <div class="header clearfix">
+        <div class="h_logo fl"><a href="#"><img src="../images/logo.png" alt=""/></a></div>
+        <ul class="h_nav fl">
+            <li><a href="#">论坛首页</a></li>
+            <li><a href="#">积分商城</a></li>
+            <li><a href="#">新帖</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <div class="h_search fl">
+            <div class="search_tags">
+                <a href="#">英雄联盟</a>
+                <a href="#">王者荣耀</a>
+            </div>
+            <div class="search_area">
+                <input type="text" id="search"/>
+                <a href="#"><img src="../images/search.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="h_login fr">
+            <a href="#" id="login">登录</a>
+            <span>/</span>
+            <a href="#" id="zhuce">注册</a>
+        </div>
+    </div>
+    <div class="shadow"></div>
+</div>
+<!--顶部导航结束-->
+
+<div class="main">
+    <div class="tiezixiangqing">
+        <!--LOL论坛帖子板块发帖&页码数-->
+        <div class="last_tiezi_btns">
+            <div class="tiezi_btns clearfix">
+                <button class="btnn btn1 fl">发帖</button>
+                <ul class="fr clearfix">
+                    <li><input name="" type="button" value="上一页" /></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input name="" type="button" value="下一页" /></li>
+                </ul>
+            </div>
+        </div>
+        <!--LOL论坛帖子板块发帖&页码数结束-->
+
+        <!--LOL论坛帖子标题-->
+        <div class="tiezi_title clearfix">
+            <div class="tiezi_title_left fl">
+                <p>查看:</p><span>350</span>
+                <p>回复:</p><span>36</span>
+            </div>
+            <div class="tiezi_title_right fl clearfix">
+                <div class="tiezi_title_rightL fl">
+                    <h4>[交流] 今天是第二天了 </h4>
+                    <a href="javascript:void (0)">[复制链接]</a>
+                </div>
+                <div class="tiezi_title_rightR fr">
+                    <span>分享到:</span>
+                    <a  class="weibo" href="javascript:void (0)"></a>
+                    <a  class="weixin" href="javascript:void (0)"></a>
+                    <a  class="tengxunweibo" href="javascript:void (0)"></a>
+                    <a  class="qqzone" href="javascript:void (0)"></a>
+                </div>
+            </div>
+        </div>
+        <!--LOL论坛帖子标题结束-->
+
+        <!--LOL论坛帖子用户-->
+        <div id="user0" class="user clearfix">
+            <!--LOL论坛帖子左板块用户信息-->
+            <div class="user_left fl">
+                <div class="userName">
+                    <p>清醒梦。</p>
+                </div>
+                <div class="userQianming">
+                    <p>认真工作</p>
+                </div>
+                <div class="userImg">
+                    <img src="../images/tiezixiangqing/img2.jpg" alt=""/>
+                </div>
+                <div class="useTieziNum clearfix">
+                    <div class="useTieziNumBox">
+                        <p>1196</p>
+                        <span>主题</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>1369</p>
+                        <span>帖子</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>3231</p>
+                        <span>积分</span>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <dl>
+                        <dt><p>LOL-英雄联盟专员</p></dt>
+                        <dd>
+                            <p>贡献度</p>
+                            <span>408</span>
+                        </dd>
+                        <dd>
+                            <p>金元</p>
+                            <span>15788</span>
+                        </dd>
+                        <dd>
+                            <p>积分</p>
+                            <span>2501</span>
+                        </dd>
+                        <dd>
+                            <p>精华</p>
+                            <span>801</span>
+                        </dd>
+                        <dd>
+                            <p>注册时间</p>
+                            <span>2010-9-24</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="userBtns clearfix">
+                    <ul>
+                        <li><a class="xinxi" href="javascript:void (0);">发信息</a></li>
+                        <li><a class="addfriend" href="javascript:void (0);">加好友</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--LOL论坛帖子左板块用户信息结束-->
+
+            <!--LOL论坛帖子右板块帖子内容-->
+            <div class="user_right fl">
+                <!--LOL论坛帖子右板块帖子内容头部-->
+                <div class="tieziTop clearfix">
+                    <div class="tieziTop_left fl">
+                        <span>发表于 <i>前天 08:46</i></span>
+                        <a href="javascript:void (0);">| 只看该作者 |</a>
+                        <a href="javascript:void (0);">倒序浏览 |</a>
+                    </div>
+                    <div class="tieziTop_right fr">
+                        <input class="tieziTop_right_btn" type="button" value="主题"/>
+                        <span>电梯直达</span>
+                        <input class="tieziTop_right_text" type="text"/>
+                        <a href="javascript:void (0);"><img src="../images/tiezixiangqing/lip.png" alt=""/></a>
+                    </div>
+
+                </div>
+                <!--LOL论坛帖子右板块帖子内容头部结束-->
+                <!--LOL论坛帖子右板块帖子内容正文-->
+                <div class="tieziContent">
+                    <p>一日不见 如隔三秋 好可怕的人啊， 感觉喉咙上火了 怎么办呢 最近在看白夜追凶 感觉越来越不好看了 有一起看的人吗 好困啊
+                        草~~ <br/>
+                        好了<br/>
+                        我准备去 洗头了<br/>
+                        好了继续看电视机去<br/>
+                        你们国庆假期都有什么节目啊<br/>
+                        我怎么感觉<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        都买零食去了
+                    </p>
+                    <div class="tieziContent_huifu">
+                        <input class="tieziContent_text fl " type="text"/>
+                        <input class="tieziContent_btn fl" type="button" value="快速回复"/>
+                    </div>
+                    <div class="tieziContent_btns">
+                        <a  class="like" href="javascript:void (0);">收藏</a>
+                        <a class="love" href="javascript:void (0);">点赞</a>
+                    </div>
+                    <div class="tieziBottom clearfix">
+                        <a class="fl" href="javascript:void (0);">回复</a>
+                        <a class="fr" href="javascript:void (0);">举报</a>
+                    </div>
+                </div>
+                <!--LOL论坛帖子右板块帖子内容正文结束-->
+            </div>
+            <!--LOL论坛帖子右板块帖子内容结束-->
+        </div>
+        <!--LOL论坛帖子用户结束-->
+
+        <!--LOL论坛帖子用户-->
+        <div id="user1" class="user clearfix">
+            <!--LOL论坛帖子左板块用户信息-->
+            <div class="user_left fl">
+                <div class="userName">
+                    <p>清醒梦。</p>
+                </div>
+                <div class="userQianming">
+                    <p>认真工作</p>
+                </div>
+                <div class="userImg">
+                    <img src="../images/tiezixiangqing/img2.jpg" alt=""/>
+                </div>
+                <div class="useTieziNum clearfix">
+                    <div class="useTieziNumBox">
+                        <p>1196</p>
+                        <span>主题</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>1369</p>
+                        <span>帖子</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>3231</p>
+                        <span>积分</span>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <dl>
+                        <dt><p>LOL-英雄联盟专员</p></dt>
+                        <dd>
+                            <p>贡献度</p>
+                            <span>408</span>
+                        </dd>
+                        <dd>
+                            <p>金元</p>
+                            <span>15788</span>
+                        </dd>
+                        <dd>
+                            <p>积分</p>
+                            <span>2501</span>
+                        </dd>
+                        <dd>
+                            <p>精华</p>
+                            <span>801</span>
+                        </dd>
+                        <dd>
+                            <p>注册时间</p>
+                            <span>2010-9-24</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="userBtns clearfix">
+                    <ul>
+                        <li><a class="xinxi" href="javascript:void (0);">发信息</a></li>
+                        <li><a class="addfriend" href="javascript:void (0);">加好友</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--LOL论坛帖子左板块用户信息结束-->
+
+            <!--LOL论坛帖子右板块帖子内容-->
+            <div class="user_right fl">
+                <!--LOL论坛帖子右板块帖子内容头部-->
+                <div class="tieziTop clearfix">
+                    <div class="tieziTop_left fl">
+                        <span>发表于 <i>前天 08:46</i></span>
+                        <a href="javascript:void (0);">| 只看该作者 |</a>
+                        <a href="javascript:void (0);">倒序浏览 |</a>
+                    </div>
+                    <div class="tieziTop_right fr">
+                        <input class="tieziTop_right_btn" type="button" value="主题"/>
+                        <span>电梯直达</span>
+                        <input class="tieziTop_right_text" type="text"/>
+                        <a href="javascript:void (0);"><img src="../images/tiezixiangqing/lip.png" alt=""/></a>
+                    </div>
+
+                </div>
+                <!--LOL论坛帖子右板块帖子内容头部结束-->
+                <!--LOL论坛帖子右板块帖子内容正文-->
+                <div class="tieziContent">
+                    <p>一日不见 如隔三秋 好可怕的人啊， 感觉喉咙上火了 怎么办呢 最近在看白夜追凶 感觉越来越不好看了 有一起看的人吗 好困啊
+                        草~~ <br/>
+                        好了<br/>
+                        我准备去 洗头了<br/>
+                        好了继续看电视机去<br/>
+                        你们国庆假期都有什么节目啊<br/>
+                        我怎么感觉<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        都买零食去了
+                    </p>
+                    <div class="tieziContent_huifu">
+                        <input class="tieziContent_text fl " type="text"/>
+                        <input class="tieziContent_btn fl" type="button" value="快速回复"/>
+                    </div>
+                    <div class="tieziContent_btns">
+                        <a  class="like" href="javascript:void (0);">收藏</a>
+                        <a class="love" href="javascript:void (0);">点赞</a>
+                    </div>
+                    <div class="tieziBottom clearfix">
+                        <a class="fl" href="javascript:void (0);">回复</a>
+                        <a class="fr" href="javascript:void (0);">举报</a>
+                    </div>
+                </div>
+                <!--LOL论坛帖子右板块帖子内容正文结束-->
+            </div>
+            <!--LOL论坛帖子右板块帖子内容结束-->
+        </div>
+        <!--LOL论坛帖子用户结束-->
+
+        <!--LOL论坛帖子用户-->
+        <div id="user2" class="user clearfix">
+            <!--LOL论坛帖子左板块用户信息-->
+            <div class="user_left fl">
+                <div class="userName">
+                    <p>清醒梦。</p>
+                </div>
+                <div class="userQianming">
+                    <p>认真工作</p>
+                </div>
+                <div class="userImg">
+                    <img src="../images/tiezixiangqing/img2.jpg" alt=""/>
+                </div>
+                <div class="useTieziNum clearfix">
+                    <div class="useTieziNumBox">
+                        <p>1196</p>
+                        <span>主题</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>1369</p>
+                        <span>帖子</span>
+                    </div>
+                    <div class="useTieziNumBox">
+                        <p>3231</p>
+                        <span>积分</span>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <dl>
+                        <dt><p>LOL-英雄联盟专员</p></dt>
+                        <dd>
+                            <p>贡献度</p>
+                            <span>408</span>
+                        </dd>
+                        <dd>
+                            <p>金元</p>
+                            <span>15788</span>
+                        </dd>
+                        <dd>
+                            <p>积分</p>
+                            <span>2501</span>
+                        </dd>
+                        <dd>
+                            <p>精华</p>
+                            <span>801</span>
+                        </dd>
+                        <dd>
+                            <p>注册时间</p>
+                            <span>2010-9-24</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="userBtns clearfix">
+                    <ul>
+                        <li><a class="xinxi" href="javascript:void (0);">发信息</a></li>
+                        <li><a class="addfriend" href="javascript:void (0);">加好友</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--LOL论坛帖子左板块用户信息结束-->
+
+            <!--LOL论坛帖子右板块帖子内容-->
+            <div class="user_right fl">
+                <!--LOL论坛帖子右板块帖子内容头部-->
+                <div class="tieziTop clearfix">
+                    <div class="tieziTop_left fl">
+                        <span>发表于 <i>前天 08:46</i></span>
+                        <a href="javascript:void (0);">| 只看该作者 |</a>
+                        <a href="javascript:void (0);">倒序浏览 |</a>
+                    </div>
+                    <div class="tieziTop_right fr">
+                        <input class="tieziTop_right_btn" type="button" value="主题"/>
+                        <span>电梯直达</span>
+                        <input class="tieziTop_right_text" type="text"/>
+                        <a href="javascript:void (0);"><img src="../images/tiezixiangqing/lip.png" alt=""/></a>
+                    </div>
+
+                </div>
+                <!--LOL论坛帖子右板块帖子内容头部结束-->
+                <!--LOL论坛帖子右板块帖子内容正文-->
+                <div class="tieziContent">
+                    <p>一日不见 如隔三秋 好可怕的人啊， 感觉喉咙上火了 怎么办呢 最近在看白夜追凶 感觉越来越不好看了 有一起看的人吗 好困啊
+                        草~~ <br/>
+                        好了<br/>
+                        我准备去 洗头了<br/>
+                        好了继续看电视机去<br/>
+                        你们国庆假期都有什么节目啊<br/>
+                        我怎么感觉<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        这到了晚上的<br/>
+                        论坛的人更少了、<br/>
+                        假期没怎么花钱<br/>
+                        都买零食去了
+                    </p>
+                    <div class="tieziContent_huifu">
+                        <input class="tieziContent_text fl " type="text"/>
+                        <input class="tieziContent_btn fl" type="button" value="快速回复"/>
+                    </div>
+                    <div class="tieziContent_btns">
+                        <a  class="like" href="javascript:void (0);">收藏</a>
+                        <a class="love" href="javascript:void (0);">点赞</a>
+                    </div>
+                    <div class="tieziBottom clearfix">
+                        <a class="fl" href="javascript:void (0);">回复</a>
+                        <a class="fr" href="javascript:void (0);">举报</a>
+                    </div>
+                </div>
+                <!--LOL论坛帖子右板块帖子内容正文结束-->
+            </div>
+            <!--LOL论坛帖子右板块帖子内容结束-->
+        </div>
+        <!--LOL论坛帖子用户结束-->
+
+        <!--LOL论坛帖子板块发帖&页码数-->
+        <div class="last_tiezi_btns">
+            <div class="tiezi_btns clearfix">
+                <button class="btnn btn1 fl">发帖</button>
+                <ul class="fr clearfix">
+                    <li><input name="" type="button" value="上一页" /></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input name="" type="button" value="下一页" /></li>
+                </ul>
+            </div>
+        </div>
+        <!--LOL论坛帖子板块发帖&页码数结束-->
+
+
+        <div class="fatieBottom clearfix">
+            <div class="fatieBottom_left fl"></div>
+            <div class="fatieBottom_right fl">
+                <div class="nologin">
+                    <div class="nologinText">
+                        <span>您需要登录后才可以回帖</span>
+                        <a href="javascript:void (0);">注册 |</a>
+                        <a href="javascript:void (0);">登录</a>
+                    </div>
+                    <input class="nologinBtn" disabled type="button" value="发表回复"/>
+                </div>
+                <div class="hadlogin">
+                    <!-- 加载编辑器的容器 -->
+                    <script id="container" name="content" type="text/plain" style="width:882px;height:130px;">
+                     这里写你的初始化内容
+                     </script>
+                    <input class="loginBtn" type="button" value="发表回复"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer开始-->
+    <div class="footer">
+        <div class="f1">
+            <a href="#">关于我们</a>
+            <a href="#">广告投放</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
+            <a href="#">友情链接</a>
+            <a href="#">诚聘英才</a>
+            <a href="#">成为会员</a>
+            <a href="#">版权声明</a>
+            <a href="#">WAP手机版</a>
+            <a href="#">购物热线:4006-577-566</a>
+        </div>
+        <p>渝ICP备14007792号-12渝B2-20150036渝网文（2015）1003-002号渝公网安渝公网安备 50019002500480号</p>
+        <p>Copyright 2004-2017 TGBUS Corporation, All Rights Reserved</p>
+    </div>
+    <!--footer结束-->
+    <br/>   <br/>   <br/>   <br/>   <br/>   <br/>   <br/>
+</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="../lib/ueditor1_4_3_3-utf8-php/utf8-php/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="../lib/ueditor1_4_3_3-utf8-php/utf8-php/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+
+</body>
+</html>
