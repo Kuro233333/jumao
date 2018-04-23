@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>橘猫游戏论坛</title>
+    <link rel="stylesheet" href="style/reset.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/animate.css"/>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <!--登录&注册框-->
+    <div id="LoginZhuceBox">
+        <!--登录&注册框头部-->
+        <div class="LoginZhuceBox_header clearfix">
+            <div id="login_btn" class="login fl"><a href="#">登录</a></div>
+            <div id="register_btn" class="register fr "><a href="#">免费注册</a></div>
+            <i id="close"><img src="images/login/close.png"alt=""/></i>
+        </div>
+        <!--登录&注册框头部结束-->
+        <!--登录&注册框内容-->
+            <!--登录框内容-->
+        <div id="login_content" class="LoginZhucecontent login_content">
+            <form>
+                <div>
+                    <input type="text" name="username" size="25" maxlength="14" placeholder="手机号/用户名/邮箱"/>
+                    <a href="#"><img src="images/login/me.png" alt=""/></a>
+                    <p id="username_tishi">用户名不存在</p>
+                </div>
+                <div>
+                    <input type="text" name="username" size="25" maxlength="14" placeholder="请输入你的密码"/>
+                    <a href="#"><img src="images/login/password.png" alt=""/></a>
+                    <p id="password_tishi">密码错误</p>
+                </div>
+                <div id="checkbox2">
+                    <label for="cc2">
+                        <input type="checkbox" id="cc2"/>
+                        <span></span>
+                    </label>
+                    <p>下次自动登录</p> <a href="#">忘记密码?</a>
+
+                </div>
+                <div>
+                    <input type="submit" value="立即登录      " name="submit" id="lijidenglu"/>
+                </div>
+                <div id="other_login">
+                    <span>其他账号登录：</span>
+                    <a href="#"><img src="images/login/weibo.png" alt=""/></a>
+                    <a href="#"><img src="images/login/weixin.png" alt=""/></a>
+                    <a href="#"><img src="images/login/qq.png" alt=""/></a>
+                </div>
+
+
+
+            </form>
+        </div>
+            <!--注册框内容-->
+        <div id="register_content" class="LoginZhucecontent">
+            <form>
+                <div>
+                    <input type="text" name="username" size="25" maxlength="14" />
+                    <a href="#"><img src="images/login/me.png" alt=""/></a>
+                    <p>2-14个字符：英文、数字或中文</p>
+                </div>
+                <div>
+                    <input type="text" name="username" size="25" maxlength="14" />
+                    <a href="#"><img src="images/login/password.png" alt=""/></a>
+                    <p>6-20个字符(区分大小写)</p>
+                </div>
+                <div>
+                    <input type="text" name="username" size="25" maxlength="14"/>
+                    <a href="#"><img src="images/login/password.png" alt=""/></a>
+                    <p>请再次输入密码</p>
+                </div>
+                <div>
+                    <input type="submit" value="马上注册      " name="submit" id="mashangzhuce"/>
+                </div>
+                <div id="checkbox">
+                    <label for="cc">
+                        <input type="checkbox" id="cc"/>
+                        <span></span>
+                    </label>
+                    <p>我已经阅读并同意</p> <a href="#">《橘猫用户服务条款》</a>
+
+                </div>
+
+
+
+            </form>
+        </div>
+        <!--登录&注册框内容结束-->
+    </div>
+    <!--登录&注册框结束-->
+
+    <!--顶部导航开始-->
+        <div class="box">
+        <div class="header clearfix">
+            <div class="h_logo fl"><a href="#"><img src="images/logo.png" alt=""/></a></div>
+            <ul class="h_nav fl">
+                <li><a href="#">论坛首页</a></li>
+                <li><a href="#">积分商城</a></li>
+                <li><a href="#">新帖</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <div class="h_search fl">
+                <div class="search_tags">
+                    <a href="#">英雄联盟</a>
+                    <a href="#">王者荣耀</a>
+                </div>
+                <div class="search_area">
+                    <input type="text" id="search"/>
+                    <a href="#"><img src="images/search.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="h_login fr">
+                <a href="#" id="login">登录</a>
+                <span>/</span>
+                <a href="#" id="zhuce">注册</a>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <!--顶部导航结束-->
+
+    <div class="main">
+        <!--左侧导航子菜单-->
+        <div class="bannerBox clearfix">
+            <!--左侧导航子菜单整个大盒子-->
+            <div class="sub_nav hide" id="sub_nav">
+                <!--每个专区的不同页面 网游-->
+                <div class="inner_box hide">
+                    <!--每个专区的不同页面的里盒子-->
+                    <div class="sub_inner_box clearfix">
+                        <!--每个游戏为一个盒子-->
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/lol.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">英雄联盟 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--每个专区的不同页面 电玩-->
+                <div class="inner_box hide">
+                    <!--每个专区的不同页面的里盒子-->
+                    <div class="sub_inner_box clearfix">
+                        <!--上半部专区-->
+                        <div class="region">
+                            <!--上半部专区标题盒子-->
+                            <div class="r_title clearfix">
+                                <h4>PSP&PSV热门游戏讨论区</h4>
+                                <a href="#" class="fr">更多</a>
+                            </div>
+                            <!--上半部专区4个游戏盒子-->
+                            <div class="r_content clearfix">
+                                <!--上半部专区每个游戏盒子-->
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/21.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[MUL] 怪物猎人综合 <span>(3)</span></a>
+                                        <div class="reg_text">
+                                            <a href="#">MH4专题</a><a href="#" class="pl5">下载</a><a href="#" class="pl5">视频</a>
+                                            <br/>
+                                            <a href="#">MH4专题</a><a href="#" class="pl5">下载</a><a href="#" class="pl5">视频</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/22.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[PSV] 第三次Z 天狱篇 <span>(2)</span></a>
+                                        <div class="reg_text">
+                                            <span>PSP：</span><a href="#">再世篇</a><a href="#" class="pl5">破界篇</a><a href="#" class="pl5">机战A</a>
+                                            <br/>
+                                            <span>NDS：</span><a href="#">机战L专题</a><a href="#" class="pl5">机战K专题</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/23.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[MUL] 龙之王冠 <span>(9)</span></a>
+                                        <div class="reg_text">
+                                            <a href="#">游戏专题</a><a href="#" class="pl5">游戏库</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/24.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[MUL] 噬神者2 <span>(2)</span></a>
+                                        <div class="reg_text">
+                                            <a href="#">噬神者爆裂汉化版下载</a><a href="#" class="pl5">下载</a>
+                                            <br/>
+                                            <a href="#">噬神者2下载</a><a href="#" class="pl5">索引</a><a href="#" class="pl5">下专题</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--下半部专区-->
+                        <div class="region">
+                            <!--下半部专区标题盒子-->
+                            <div class="r_title clearfix">
+                                <h4>3DS热门游戏讨论区</h4>
+                                <a href="#" class="fr">更多</a>
+                            </div>
+                            <!--下半部专区4个游戏盒子-->
+                            <div class="r_content clearfix">
+                                <!--下半部专区每个游戏盒子-->
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/25.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[3DS]精灵宝可梦 太阳/月亮</a>
+                                        <div class="reg_text">
+                                            <span>黑白2：</span><a href="#">攻略专题</a><span class="pl5">黑白：</span><a href="#">专题</a>
+                                            <br/>
+                                            <span>金银：</span><a href="#">攻略专题</a><span class="pl5">白金：</span><a href="#">专题</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/26.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[3DS] 怪物猎人X | 4 | 4G </a>
+                                        <div class="reg_text">
+                                            <a href="#">MH4专题</a><a href="#" class="pl5">下载</a><a href="#" class="pl5">视频</a>
+                                            <br/>
+                                            <a href="#">MH4索引</a><a href="#" class="pl5">武器</a><a href="#" class="pl5">怪物</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/27.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[MUL] 传说综合区(勇气双子) </a>
+                                        <div class="reg_text">
+                                            <a href="#">游戏专题</a><a href="#" class="pl5">游戏库</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="r_everygame fl">
+                                    <div class="reg_logo fl"><img src="images/28.jpg" alt=""/></div>
+                                    <div class="reg_content fl">
+                                        <a href="#" class="reg_title">[3DS] 塞尔达传说2</a>
+                                        <div class="reg_text">
+                                            <a href="#">塞尔达传说2下载</a><a href="#" class="pl5">下载</a>
+                                            <br/>
+                                            <a href="#">塞尔达传说2下载</a><a href="#" class="pl5">索引</a><a href="#" class="pl5">下专题</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--每个专区的不同页面 手游-->
+                <div class="inner_box hide">
+                    <!--每个专区的不同页面的里盒子-->
+                    <div class="sub_inner_box clearfix">
+                        <!--每个游戏为一个盒子-->
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/37.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">王者荣耀 <span>(4236)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--每个专区的不同页面  页游-->
+                <div class="inner_box hide">
+                    <!--每个专区的不同页面的里盒子-->
+                    <div class="sub_inner_box clearfix">
+                        <!--每个游戏为一个盒子-->
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/41.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">龙神契约 <span>(2301)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--每个专区的不同页面  单机-->
+                <div class="inner_box hide">
+                    <!--每个专区的不同页面的里盒子-->
+                    <div class="sub_inner_box clearfix">
+                        <!--每个游戏为一个盒子-->
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="everygame fl">
+                            <div class="game_logo fl">
+                                <a href="#"><img src="images/46.png" alt=""/></a>
+                            </div>
+                            <div class="game_info fl">
+                                <a href="#" class="title">女王的抉择 <span>(8541)</span></a>
+                                <div class="content">
+                                    <a href="#">游戏首页</a><a href="#" class="pl5">视频专区</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--左侧导航子菜单整个大盒子结束-->
+            <!--左侧导航菜单-->
+            <div class="left_nav fl" id="left_nav">
+                <div class="left_nav_item" >
+                    <a href="#">
+                        <span>网游论坛专区</span>
+                        <i><img src="images/right.png" alt=""/></i>
+                    </a>
+                </div>
+                <div class="left_nav_item ">
+                    <a href="#">
+                        <span>电玩论坛专区</span>
+                        <i> <img src="images/right.png" alt=""/></i>
+                    </a>
+                </div>
+                <div class="left_nav_item">
+                    <a href="#">
+                        <span>手游论坛专区</span>
+                        <i><img src="images/right.png" alt=""/></i>
+                    </a>
+                </div>
+                <div class="left_nav_item">
+                    <a href="#">
+                        <span>页游论坛专区</span>
+                        <i><img src="images/right.png" alt=""/></i>
+                    </a>
+                </div>
+                <div class="left_nav_item">
+                    <a href="#">
+                        <span>单机论坛专区</span>
+                        <i><img src="images/right.png" alt=""/></i>
+                    </a>
+                </div>
+            </div>
+            <!--左侧导航菜单结束-->
+            <!--轮播图-->
+            <div class="banner fr" id="banner">
+                <div class="bannerImg" id="bannerImg">
+                    <a href="#">
+                        <div class="banner_slide slide1 slide_active"></div>
+                    </a>
+                    <a href="#">
+                        <div class="banner_slide slide2  "></div>
+                    </a>
+                    <a href="#">
+                        <div class="banner_slide slide3 "></div>
+                    </a>
+                </div>
+                <!--上一张，下一张按钮-->
+                <a href="javascript:void(0)" class="btn prev" id="prev"></a>
+                <a href="javascript:void(0)" class="btn next" id="next"></a>
+                <!--圆点导航-->
+                <div class="dots" id="dots">
+                    <span class="dots_active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!--轮播图结束-->
+        </div>
+        <!--左侧导航子菜单结束-->
+
+        <!--热门游戏专区-->
+        <div class="hotGame">
+            <!--热门游戏专区标题-->
+            <div class="hg_title clearfix">
+                <i class="fl"><img src="images/hot.png" alt=""/></i><h3 class="fl">热/门/游/戏/专/区</h3><i class="fr"><img src="images/hot.png" alt=""/></i>
+            </div>
+            <!--热门游戏专区标题结束-->
+            <!--热门游戏专区所有游戏盒子-->
+           <div class="hg_content clearfix">
+               <!--热门游戏专区每个游戏-->
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+
+
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic" >
+                       <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">王者荣耀 </a><span>(4567)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">王者荣耀 </a><span>(4567)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">王者荣耀 </a><span>(4567)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">王者荣耀 </a><span>(4567)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">王者荣耀 </a><span>(4567)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main13.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">地下城与勇士 </a><span>(1367)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main13.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">地下城与勇士 </a><span>(1367)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main13.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">地下城与勇士 </a><span>(1367)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main13.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">地下城与勇士 </a><span>(1367)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="hg_everygame fl" data-in="animated pulse">
+                   <div class="gamePic">
+                       <a href="#"><img src="images/main13.jpg" alt=""/></a>
+                   </div>
+                   <div class="gameText">
+                       <a href="#">地下城与勇士 </a><span>(1367)</span>
+                       <div class="ganmeText_bottom">
+                           <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <!--热门游戏专区所有游戏盒子结束-->
+        </div>
+        <!--热门游戏专区结束-->
+
+        <!--推荐游戏专区-->
+        <div class="tjGameBox">
+            <div class="tjGame">
+                <div class="hg_title clearfix">
+                    <i class="fl"><img src="images/tuijian.png" alt=""/></i><h3 class="fl">推/荐/游/戏/专/区</h3><i class="fr"><img src="images/tuijian.png" alt=""/></i>
+                </div>
+                <div class="hg_content clearfix">
+                    <!--热门游戏专区每个游戏-->
+                    <div class="hg_everygame fl" data-in="animated pulse" >
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse" >
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse" >
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse" >
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse" >
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main1.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">LOL-英雄联盟 </a><span>(2267)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">LPL夏季赛</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hg_everygame fl" data-in="animated pulse">
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">王者荣耀 </a><span>(4567)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse">
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">王者荣耀 </a><span>(4567)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse">
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">王者荣耀 </a><span>(4567)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse">
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">王者荣耀 </a><span>(4567)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hg_everygame fl" data-in="animated pulse">
+                        <div class="gamePic">
+                            <a href="#"><img src="images/main12.jpg" alt=""/></a>
+                        </div>
+                        <div class="gameText">
+                            <a href="#">王者荣耀 </a><span>(4567)</span>
+                            <div class="ganmeText_bottom">
+                                <a href="#">专区首页</a><a href="#" class="pl5">S8赛季</a><a href="#"class="pl5">视频</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--推荐游戏专区结束-->
+
+        <!--橘猫游戏广场-->
+        <div class="guangchang">
+            <div class="hg_title clearfix">
+                <i class="fl"><img src="images/live.png" alt=""/></i><h3 class="fl">橘/猫/游/戏/广/场</h3><i class="fr"><img src="images/live.png" alt=""/></i>
+            </div>
+
+            <div class="gc_content clearfix">
+                <div class="gc_every fl">
+                    <div class="gc_logo">
+                        <img src="images/shiwu.png" alt=""/>
+                    </div>
+                    <div class="gc_title"><a href="#">论坛事务 <i></i></a></div>
+
+                    <div class="gc_bottom">
+                        <a href="#">投诉举报</a> <a href="#">投诉举报</a> <a href="#">投诉举报</a>
+                    </div>
+                </div>
+                <div class="gc_every fl">
+                    <div class="gc_logo">
+                        <img src="images/yule.png" alt=""/>
+                    </div>
+                    <div class="gc_title"><a href="#">娱乐活动中心 <i></i></a></div>
+
+                    <div class="gc_bottom">
+                        <a href="#">蹲坑必备</a> <a href="#">桌游反杀</a> <a href="#">吃喝玩乐</a>
+                    </div>
+                </div>
+                <div class="gc_every fl">
+                    <div class="gc_logo">
+                        <img src="images/fuli.png" alt=""/>
+                    </div>
+                    <div class="gc_title"><a href="#">活动福利 <i></i></a></div>
+
+                    <div class="gc_bottom">
+                        <a href="#">每周点卡兑换</a> <a href="#">交易集市</a>
+                    </div>
+                </div>
+                <div class="gc_every fl">
+                    <div class="gc_logo">
+                        <img src="images/xunzhang.png" alt=""/>
+                    </div>
+                    <div class="gc_title"><a href="#">勋章申请区 <i></i></a></div>
+
+                    <div class="gc_bottom">
+                        <a href="#">勋章商店</a> <a href="#">申请勋章</a>
+                    </div>
+                </div>
+                <div class="gc_every fl">
+                    <div class="gc_logo">
+                        <img src="images/shequ.png" alt=""/>
+                    </div>
+                    <div class="gc_title"><a href="#">欢聚游戏社区 <i></i></a></div>
+
+                    <div class="gc_bottom">
+                        <a href="#">为YY用户提供一站式端游服务</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--橘猫游戏广场结束-->
+　　　　　　
+        <!--footer开始-->
+        <div class="footer">
+            <div class="f1">
+                <a href="#">关于我们</a>
+                <a href="#">广告投放</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">友情链接</a>
+                <a href="#">诚聘英才</a>
+                <a href="#">成为会员</a>
+                <a href="#">版权声明</a>
+                <a href="#">WAP手机版</a>
+                <a href="#">购物热线:4006-577-566</a>
+            </div>
+            <p>渝ICP备14007792号-12渝B2-20150036渝网文（2015）1003-002号渝公网安渝公网安备 50019002500480号</p>
+            <p>Copyright 2004-2017 TGBUS Corporation, All Rights Reserved</p>
+        </div>
+        <!--footer结束-->
+
+    </div>
+    <!--main-->
+
+
+    <br/>   <br/>   <br/>   <br/>   <br/>   <br/>   <br/>
+
+
+
+
+
+
+
+</body>
+</html>

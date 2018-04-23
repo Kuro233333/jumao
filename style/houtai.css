@@ -1,0 +1,244 @@
+.header{
+    padding-left: 240px;
+    min-width: 500px;
+    padding-right: 13px;
+}
+.header_right{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    float: left;
+    line-height: 60px;
+}
+
+.header .yijian{
+    padding-left: 30px;
+    background: url("../images/houtai/xiaoxi.png")0 22px no-repeat;
+    position: relative;
+
+}
+.header .yijian a,
+.header .xitongxiaoxi a,
+.header .tuichu a {
+    color: #999999;
+    font-size: 14px;
+    vertical-align: middle;
+    margin: 0 29px 0 7px;
+}
+.header .yijian i{
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #F0AB59;
+    font-size: 10px;
+    text-align: center;
+}
+.header .yijian i span{
+    position: absolute;
+    top: -22px;
+    left: 1px;
+}
+.header .xitongxiaoxi{
+    padding-left: 20px;
+    background: url("../images/houtai/xitong.png")0 22px no-repeat;
+}
+.header .tuichu{
+    padding-left: 20px;
+    background: url("../images/houtai/cun.png")0 22px no-repeat;
+}
+
+.header_left{
+    width: 240px;
+    height: 60px;
+    background-color: #FF8F00;
+    position: relative;
+    float: left;
+    margin-left: -100%;
+    left: -240px;
+    text-align: center;
+    line-height: 60px;
+}
+.header_left span{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.main{
+    padding-left: 240px;
+    min-width: 500px;
+
+}
+
+.main_content{
+    width: 100%;
+    position: relative;
+    float: left;
+    background-color: #ECEDF1;
+}
+.main_content .c1{
+    background-color: greenyellow;
+    margin-left: 18px;
+    width:calc(100% - 18px);
+    height: 986px;
+
+}
+.main_content .title{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: gold;
+}
+.main_content .title img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+ .main_content .c1_banner{
+     width: 360px;
+     height: 232px;
+     background-color: #fff;
+     margin-right: 20px;
+     margin-top: 14px;
+ }
+ .c1_banner_main{
+     padding: 15px 25px 12px 22px;
+ }
+ .c1_banner_main_title{
+     width: 100%;
+     height: 23px;
+     background: #000;
+ }
+.c1_banner_main_title span{
+    color: #FFFFFF;
+    display: inline-block;
+    width: 32.3%;
+    text-align: center;
+    font-size: 12px;
+}
+.c1_banner_main .bannerList{
+    height: 23px;
+    line-height: 23px;
+}
+.c1_banner_main .bannerList input{
+    width: 14px;
+    height: 14px;
+}
+.c1_banner_main .bannerList span{
+    font-size: 14px;
+    color: #656565;
+    line-height: 23px;
+    margin: 0 5px;
+}
+.c1_banner_main .bannerList a{
+    color: #656565;
+    font-size: 14px;
+}
+.c1_banner_main .bannerList .aFirst{
+    margin-left: 19px;
+    color: #E50011;
+}
+.main_content .c1_menu{
+    width: 578px;
+    height: 232px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-top: 14px;
+}
+
+.main_content .c1_luntan{
+    width: 453px;
+    height: 467px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.main_content .c1_youxi{
+    width: 453px;
+    height: 467px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.main_nav{
+    width: 240px;
+    background-color: #000000;
+    position: relative;
+    float: left;
+    margin-left: -100%;
+    left: -240px;
+    height: 1000px;
+}
+.main_nav .info{
+    height: 90px;
+    width: 100%;
+}
+.main_nav .info_left{
+    margin: 20px 20px 20px 30px ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.main_nav .info_left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+ .main_nav .info_right{
+    margin-top: 23px;
+
+ }
+.main_nav .info_right a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.main_nav .info_right span{
+    font-size: 14px;
+    color: #999999;
+}
+.main_nav li{
+    height: 40px;
+    text-align: left;
+  line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    cursor: pointer;
+}
+.main_nav .active{
+     background-color: rgba(76,76,76,.3);
+     border-left: 4px solid #FF8F00;
+     box-sizing: border-box;
+ }
+.main_nav ul li:nth-child(1){
+    background-image: url("../images/houtai/home.png");
+    background-position: 66px 7px ;
+    background-repeat: no-repeat;
+}
+.main_nav ul li:nth-child(2){
+    background-image: url("../images/houtai/people.png");
+    background-position: 66px 7px ;
+    background-repeat: no-repeat;
+}
+.main_nav ul li:nth-child(3){
+    background-image: url("../images/houtai/tiezi.png");
+    background-position: 66px 7px ;
+    background-repeat: no-repeat;
+}
+.main_nav ul li:nth-child(4){
+    background-image: url("../images/houtai/huitie.png");
+    background-position: 66px 7px ;
+    background-repeat: no-repeat;
+}
+.main_nav ul li:nth-child(5){
+    background-image: url("../images/houtai/people1.png");
+    background-position: 66px 7px ;
+    background-repeat: no-repeat;
+}
